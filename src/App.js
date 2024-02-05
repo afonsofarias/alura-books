@@ -1,19 +1,10 @@
 import './App.css';
-import Logo from './componentes/Logo'
-import OpcoesHeader from './componentes/OpcoesHeader'
-import IconesHeader from './componentes/IconesHeader'
-
-
-const icones = [perfil, sacola]
+import Header from './componentes/Header'
 
 function App() {
   return (
     <div className="App">
-      <header className='App-header'>
-        <Logo></Logo>
-        <OpcoesHeader></OpcoesHeader>
-        <IconesHeader></IconesHeader>
-      </header>
+      <Header/>
     </div>
   );
 }
