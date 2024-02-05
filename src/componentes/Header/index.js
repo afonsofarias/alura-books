@@ -1,5 +1,5 @@
 import './estilo.css'
-import Logo from '../../componentes/Logo'
+import Logo from '../componentes/Logo'
 import OpcoesHeader from '../../componentes/OpcoesHeader'
 import IconesHeader from '../../componentes/IconesHeader'
 
