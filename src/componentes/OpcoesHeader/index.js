@@ -1,7 +1,7 @@
 const textoOpcoes = ['CATEGORIAS','MINHA ESTANTE', 'FAVORITOS']
 
 function OpcoesHeader() {
-    return {
+    return (
         <ul className='opcoes'>
             { textoOpcoes.map( (texto) => (
                 <li className='opcao'>
@@ -9,7 +9,7 @@ function OpcoesHeader() {
                 </li>
             ) ) }
         </ul>
-    }
+    )
 }
 
 export default OpcoesHeader
