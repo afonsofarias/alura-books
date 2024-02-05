@@ -1,8 +1,8 @@
 import './App.css';
 import Logo from './componentes/Logo'
 import OpcoesHeader from './componentes/OpcoesHeader'
-import perfil from './imagens/perfil.svg'
-import sacola from './imagens/sacola.svg'
+import IconesHeader from './componentes/IconesHeader'
+
 
 const icones = [perfil, sacola]
 
@@ -12,13 +12,7 @@ function App() {
       <header className='App-header'>
         <Logo></Logo>
         <OpcoesHeader></OpcoesHeader>
-
-        <ul className='icones'>
-          { icones.map( (icone) => (
-            <li className='icone'><img src={icone}></img></li>
-          ) ) }
-        </ul>
-
+        <IconesHeader></IconesHeader>
       </header>
     </div>
   );
