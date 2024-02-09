@@ -12,7 +12,7 @@ function App() {
   return (
     <AppContainer>
       <Header/>
-      <Pesquisa />
+      <Pesquisa/>
     </AppContainer>
   );
 }
