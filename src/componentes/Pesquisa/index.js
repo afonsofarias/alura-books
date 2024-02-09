@@ -42,7 +42,6 @@ function Pesquisa() {
                     setLivrosPesquisados(resultadoPesquisa)
                 }}
             />
-            <p>{textoDigitado}</p>
         </PesquisaContainer>
     )
 }
