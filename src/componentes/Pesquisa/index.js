@@ -51,9 +51,13 @@ function Pesquisa() {
     const [livros, setLivros] = useState([])
 
     useEffect(() => {
-        const livrosDaAPI = getLivros()
-        setLivros(livrosDaAPI)
+        fetchLivros()
     }, [])
+
+    async function fetchLivros(){
+        const livrosDaAPI = await getLivros()
+        setLivros(livrosDaAPI)
+    }
 
     return (
         <PesquisaContainer>
@@ -69,7 +73,7 @@ function Pesquisa() {
             />
             { livrosPesquisados.map(livro => (
                 <Resultado>
-                    <img src={ livro.src } />
+                    <img src={ livro.src } alt='imagem do livro'/>
                     <p>{ livro.nome }</p>
                 </Resultado>
             )) }
